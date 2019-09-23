@@ -1,0 +1,49 @@
+.splash{
+  background-image: linear-gradient(to right bottom, rgba(109, 170, 255,.3), rgba(49, 97, 163, .9));
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+  position: relative;
+
+  &__heading{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    }
+
+  .heading-primary{
+    font-size: 45px;
+    text-transform: uppercase;
+    color: $color-white;
+    letter-spacing: 2px;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+
+  }
+  .heading-secondary{
+    padding-top: 25px;
+    padding-left: 25px;
+    font-size: 25px;
+    color: white;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+    
+
+  }
+  
+  
+}
+
+
+
