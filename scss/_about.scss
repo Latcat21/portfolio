@@ -1,0 +1,36 @@
+.about{
+  height: 70vh;
+ 
+}
+
+.intro{
+  
+  margin: 20px 0px;
+  height: auto;
+  display: grid;
+  padding: 40px 20px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+
+
+  &__img{  
+    
+
+    img{
+    width: 95%;
+    box-shadow: 0 15px 40px rgba(#000, .9);
+    border-radius: 5%;
+    }
+  }
+  &__text{
+    font-size: 25px;
+  
+    a{
+      list-style: none;
+      color: $secondary-color;
+      text-decoration: none;
+    }
+    
+  }
+  
+}  

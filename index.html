@@ -8,11 +8,13 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
  <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
   </head>
 <body>
-  <header>
- 
+  <div class="container">
+  <section class="splash">
     <div class="menu-btn">
         <span class="menu-btn__burger"></span>
       </div>
@@ -30,18 +32,72 @@
             </li>
          </ul>
       </nav>
-</header>
-<section class="splash">
   <div class="splash__heading">
   <h3 class="heading-primary">Hi, My name is<span class="heading-primary__name"> Brian</span> </h3>
-  <h2 class="heading-secondary">I love to create beautifull websites</h2>
+  <h2 class="heading-secondary">I love to create beautiful websites</h2>
+</div>
+</section>
+<div class="about-container">
+<h2 class="section-headings">About Me</h2>
+<section class="about">
+<div class="intro">
+  <div class="intro__img">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1743827/about_pic.jpg" alt="Self-pic">
+  </div>
+  <div class="intro__text">
+      <p>Personal Trainer turned Web Developer with a passion for building beautifully designed apps. I am a self taught Web Developer and a graduate of <a class="ga-link" href="https://generalassemb.ly/education/software-engineering-immersive/chicago" target="_blank"> General Assembly's </a> Software Enineering Immersive</p>
+  </div>
+</div>
 </div>
 </section>
 
-
+<section class="portfolio">
+  <div class="portfolio-container">
+<h2 class="section-headings">Portfolio</h2>
+  <div class="portfolio__card" data-aos="fade-left">
+    <img src="images/mem-game.png">
+  <div class="portfolio__card--info">
+    <h3>The Memory Game</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus itaque sit debitis cumque delectus, expedita illum facilis modi deleniti. Exercitationem blanditiis minima, omnis beatae nesciunt adipisci quam unde quasi mollitia!</p>
+    <p>Built Using...</p>
+    <ul class="web-tech">
+        <h4>HTML5</h4>
+        <h4>CSS</i></h4>
+        <h4>jQuery</i></h4>
+      </ul>
+      <a href="https://latcat21.github.io/Memory-Card-Game/" class="card-btn" target="_blank" >Check it out</a>
+              <a href="https://github.com/Latcat21/Memory-Card-Game" target="_blank"><i class="fab fa-github-square web-tech-github"></i></a>
+  </div>
+</div>
+  <div class="portfolio__card"data-aos="fade-right">
+    <img src="images/royal-travels.png">
+    <div class="portfolio__card--info">
+      <h3>Royal Travels</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim odio ipsam voluptates iusto excepturi rerum optio accusantium error officiis eaque. Modi, incidunt quae. Non eaque repellendus facere voluptatum harum explicabo.</p>
+    </div>
+  </div>
+    <div class="portfolio__card" data-aos="fade-left">
+    <img src="images/the-recruiter.png" >
+      
+      <div class="portfolio__card--info">
+        <h3>The Recruiter</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia recusandae voluptatibus hic veritatis, placeat quibusdam praesentium vitae incidunt laboriosam, earum odio necessitatibus quia? Labore cumque omnis perferendis tenetur nemo maxime.</p>
+    </div>
+  </div>
+</div>
+</section>
+</div>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 200,
+      duration: 1000
+    });
+  </script>
 <script src="javascript/main.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
   </body>
 </html>
