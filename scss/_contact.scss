@@ -1,0 +1,70 @@
+.contact{
+  margin-top: 2152px;
+  background:  linear-gradient(to right bottom, rgba(109, 170, 255, .3), rgba(49, 97, 163, .99));
+  height: 65vh;
+  padding-top: 100px;
+  margin-right: -30px;
+  background-size: cover;
+  background-position: center;
+  background-attachment:fixed;
+  
+ position: relative;
+}
+
+.section-contact{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding-bottom: 6rem;
+  width: 70%;
+  height: 80%;
+
+}
+.contact-section-heading{
+  font-size: 3.5rem;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: .5rem;
+}
+.contact-section-paragraph{
+  color: #fff;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+.btn-contact,
+.btn-contact:visited{
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1rem 2rem;
+  color: #fff;
+  border: 1px solid #fff;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  }
+  .btn-contact i{
+    padding: 1rem;
+  }
+  .social-icons-list{
+    margin-top: 2.5rem;
+  }
+ .social-icons-list ul  {
+  text-decoration: none;
+  padding: 1rem;
+  text-align: center;
+  font-size: 3rem;
+  list-style: none;
+}
+.social-icons-list li{
+    display: inline-block;
+} 
+
+.social-icons-list a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 4rem;
+  padding: 2rem;
+  
+}

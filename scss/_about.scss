@@ -1,10 +1,12 @@
 .about{
   height: 70vh;
+  margin-bottom: 100px;
+  
+  
  
 }
 
 .intro{
-  
   margin: 20px 0px;
   height: auto;
   display: grid;
@@ -18,12 +20,14 @@
 
     img{
     width: 95%;
+    max-width: 500px;
     box-shadow: 0 15px 40px rgba(#000, .9);
     border-radius: 5%;
     }
   }
   &__text{
     font-size: 25px;
+    text-indent: 40px;
   
     a{
       list-style: none;
@@ -34,3 +38,26 @@
   }
   
 }  
+
+.about-social-icons-list{
+    margin-top: 2.5rem;
+  
+    ul {
+  text-decoration: none;
+  padding: 1rem;
+  text-align: center;
+  font-size: 3rem;
+  list-style: none;
+}
+li{
+    display: inline-block;
+} 
+
+a{
+  text-decoration: none;
+  color: #000;
+  font-size: 4rem;
+  
+  
+}
+}

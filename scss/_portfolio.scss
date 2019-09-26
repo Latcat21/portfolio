@@ -1,60 +1,88 @@
 .portfolio{
 background-color: #f1f1f1;
+position: absolute;
+height: auto;
 
-
-
-  &__card{
-    margin: 20px 0px;
- 
-  display: grid;
-  padding: 40px 20px;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
-  background-color: #fff;
-  
-
-
+&__card{
+    position: relative;
+    width: 90%;
+    left: 5%;
+    margin: 50px 0px;
+    display: grid;
+    padding: 60px 20px;  
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    background-color: #fff;
+    box-shadow: 0 15px 40px rgba(#000, .9);
+   
     img{
       width: 100%;
-      
-     
-      
-    }
-    &--info{
-      
-      h3{
-        font-size: 30px;
-        text-align: center;
-        padding-bottom: 10px;
       }
-      h3:after{
-        display:block;
-  height: 3px;
-  background-color: $primary-color;
-  content: ' ';
-  width: 200px;
-  margin: 0 auto;
-  margin-top: 20px;
-      }
-      p{
-      font-size: 20px;
-      }
+        &--info{
+          h3{
+            font-size: 30px;
+            text-align: center;
+            padding-bottom: 10px;
+          }
+          h3:after{
+            display:block;
+            height: 3px;
+            background-color: $primary-color;
+            content: ' ';
+            width: 200px;
+            margin: 0 auto;
+            margin-top: 20px;
+          }
+          p{
+            font-size: 20px;
+    
+          }
       .web-tech{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        
-      
-      text-transform: uppercase;
-      font-size: 1.3rem;
-      font-weight: 700;
-      padding-bottom: .5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 1.3rem;
+            font-weight: 700;
+            padding-bottom: .5rem;
 
       h4{
         padding: 0px 10px;
       }
       }
+      .btns{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .card-btn{
+        text-decoration: none;
+        background-color: #000;
+        color:$primary-color;
+        padding: 1rem 1.5rem;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 1rem;
+        
+        
+        }
+        .card-btn a, a:visited{
+          text-decoration: none;
+          background-color: white;
+          border: 1px solid #fff;
+          color: #3161a3
+        }
+        .web-tech-github{
+          color: #000;
+          font-size: 65px;
+          margin: 10px;  
+        }
+
     }
+  }
+  .portfolio__card:nth-child(odd) img{
+    order: 2;
   }
 }  

@@ -1,4 +1,16 @@
-.section-headings{
+.section-headings-about{
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-align: center;
+  color: $primary-color;
+  font-weight: 700;
+  margin-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+
+}  
+.section-headings-portfolio{  
   font-size: 50px;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -10,12 +22,3 @@
   padding-bottom: 50px;
 
 }  
-.section-headings:after{
-  display:block;
-  height: 3px;
-  background-color: $secondary-color;
-  content: ' ';
-  width: 200px;
-  margin: 0 auto;
-  margin-top: 20px;
-}
