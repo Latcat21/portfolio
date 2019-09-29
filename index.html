@@ -13,31 +13,42 @@
  <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
   </head>
 <body>
-  <div class="container">
+  
+    <header>
+        <nav class="nav">
+            <ul class="menu-nav">
+              <li class="menu-nav__item">
+                <a href="index.html" id="home" class="menu-nav__link">
+                  Home
+                </a>
+              </li>
+              <li class="menu-nav__item">
+                  <a href="#about" class="menu-nav__link">
+                    About
+                  </a>
+                </li>
+                <li class="menu-nav__item">
+                    <a  href="#portfolio" class="menu-nav__link">
+                     Portfolio
+                    </a>
+                  </li>
+              <li class="menu-nav__item">
+                  <a href="contact.html" class="menu-nav__link">
+                    Contact
+                  </a>
+                </li>
+             </ul>
+          </nav>
+    </header>
+    <div class="container">
   <section class="splash">
-    <div class="menu-btn">
-        <span class="menu-btn__burger"></span>
-      </div>
-      <nav class="nav">
-        <ul class="menu-nav">
-          <li class="menu-nav__item">
-            <a href="index.html" class="menu-nav__link active">
-              Home
-            </a>
-          </li>
-          <li class="menu-nav__item">
-              <a href="contact.html" class="menu-nav__link">
-                Contact
-              </a>
-            </li>
-         </ul>
-      </nav>
+    
   <div class="splash__heading">
   <h3 class="heading-primary">Hi, My name is<span class="heading-primary__name"> Brian</span> </h3>
   <h2 class="heading-secondary">I love to create beautiful websites</h2>
 </div>
 </section>
-<section class="about">
+<section class="about" id="about">
     <h2 class="section-headings-about">About Me</h2>
 <div class="intro">
   <div class="intro__img">
@@ -55,14 +66,14 @@
 </div>
 </section>
 
-<section class="portfolio">
+<section class="portfolio" id="portfolio">
   <div class="portfolio-container">
 <h2 class="section-headings-portfolio">Portfolio</h2>
   <div class="portfolio__card" data-aos="fade-left">
     <img src="images/mem-game.png">
   <div class="portfolio__card--info">
     <h3>The Memory Game</h3>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto officiis fugit nisi nobis reiciendis, repellat vitae ullam sint harum excepturi, tenetur totam hic dolores repudiandae. Ullam iure architecto doloribus voluptas. </p>
+    <p>Try matching two cards that are the same. If they don't match you move on to flip other cards and have to remember their positions. The game ends when the whole board is uncovered. </p>
     <p>Built Using...</p>
     <ul class="web-tech">
         <h4>HTML5</h4>
@@ -77,10 +88,12 @@
 </div>
 
   <div class="portfolio__card"data-aos="fade-right">
-    <img src="images/royal-travels.png">
+      
+    <a href="https://latcat21.github.io/royal-travels/" target="_blank"><img src="images/royal-travels.png" ></a>
+    
     <div class="portfolio__card--info">
-      <h3>Royal Travels</h3>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim odio ipsam voluptates iusto excepturi rerum optio accusantium error officiis eaque. Modi, incidunt quae. Non eaque repellendus facere voluptatum harum explicabo.</p>
+        <h3>Royal Travels</h3>
+      <p>Royal Travels Shows information of countries by searching for a specific country.Using the <a href="https://restcountries.eu/" target="_blank">Restcountries API </a>When a country is searched the information dispalyed is that Country's flag, capital, language, region, population, currency and gini coefficient.</p>
       <p>Built Using...</p>
     <ul class="web-tech">
         <h4>HTML5</h4>
@@ -98,7 +111,7 @@
       
       <div class="portfolio__card--info">
         <h3>The Recruiter</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia recusandae voluptatibus hic veritatis, placeat quibusdam praesentium vitae incidunt laboriosam, earum odio necessitatibus quia? Labore cumque omnis perferendis tenetur nemo maxime.</p>
+      <p>A Sinatra based application that helps college baseball teams and high school baseball players connect with each other.The Players and Colleges are matched with eachother according to positions played and positions needed </p>
       <p>Built Using...</p>
     <ul class="web-tech">
         <h4>HTML5</h4>
@@ -117,14 +130,8 @@
 <section class="contact" id="contact">
     <div class="section-contact">
       <h1 class="contact-section-heading">Lets get in touch</h1>
-      <p class="contact-section-paragraph">If you like my work and want to get in touch you can <br>contact me through these links</p>
       <a href="mailto:brianlattner@gmail.com" target="_blank" class="btn-contact"><i class="fas fa-envelope-square"></i>Get in touch</a>
-           <ul class="social-icons-list" id="social-icons-list">
-              <li><a href="https://www.instagram.com/royallatcat/?hl=en"><i class="fab fa-instagram instagram" ></i></a></li>
-              <li><a href="https://github.com/Latcat21"><i class="fab fa-github-square github"></i></a></li>
-              <li><a href="https://www.linkedin.com/in/brian-lattner-722484177/"> <i class="fab fa-linkedin"></i></a></li>
-          </ul>
-  </div>
+           </div>
   </section>
   <footer class="footer">
       <div class="container">
