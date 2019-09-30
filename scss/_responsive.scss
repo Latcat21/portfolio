@@ -1,0 +1,103 @@
+  @media only screen and (max-width:995px){
+    .about-social-icons-list{
+      a{
+        font-size: 40px;
+    }
+}
+.portfolio{
+    
+  &__card{
+      &__info{
+      h3{
+        font-size: 30px;
+      }
+      p{
+        font-size: 15px
+      }
+    }
+    .web-tech{
+      font-size: 12px;
+    }
+  }
+}
+.contact{
+  margin-top: 2200px;
+}
+  }
+
+  @media only screen and (max-width:890px){
+    
+    .splash{
+    .heading-primary{
+      font-size: 40px;
+    }
+    .heading-secondary{
+      font-size: 25px;
+    } 
+  }
+    .about{
+     height: 90vh;
+    }
+    .intro{
+      display: block;
+      
+      &__img{
+       display: none;
+        }
+      &__text{
+        font-size: 20px;  
+      }  
+    }
+    .about-social-icons-list{
+      
+      a{
+        font-size: 50px;
+      }
+    }
+
+    .portfolio{
+      &__card{
+        display: block;
+      
+      &--info{
+        h3{
+          padding-top: 20px;
+         
+        }  
+      }
+    }
+    }
+    .contact{
+      margin-top: 3000px;
+      
+    }
+    .btn-contact{
+      padding: .5rem 1rem;
+    }
+    .btn-contact i{
+      padding: 1rem;
+    }
+
+  }
+  @media only screen and (max-width:730px){
+    .main-nav{
+      margin-right: 10px;
+    }
+ 
+  }
+  @media only screen and (max-width:500px){
+    .main-nav li{
+      font-size: 15px;
+    }
+    .splash{
+      .heading-primary{
+        font-size: 30px;
+      }
+      .heading-secondary{
+        font-size: 18px;
+      } 
+    }
+    .contact{
+      margin-top: 2900px;
+    }
+  }

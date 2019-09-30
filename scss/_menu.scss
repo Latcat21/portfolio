@@ -1,19 +1,30 @@
-header{
- background-color: black;
- opacity: .9;
-
+header {
+  background: black;
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  left: 0;
+  top: 0;
 }
 
-.menu-nav{
-  display: flex;
+.main-nav{
+  float: right;
+  margin-right: 10rem;  
+  color: #fff;
   
-  &__item{
-   padding: 0px 10px;
-    font-size: 25px;
-    text-decoration: none;
-    a{
-       
-        color: #fff;
-      }
-  }
+}
+.main-nav li{
+  display: inline-block;
+  padding: 10px 25px 0 25px;
+  font-size: 20px;
+  text-decoration: none;
+  font-family:  "Lato", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+}
+.main-nav li a{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: .5px;
 }

@@ -1,6 +1,11 @@
 .about{
-  height: 70vh;
+  height: 95vh;
+  margin-top: -25vh;
   margin-bottom: 100px;
+  width: 100vw;
+  background-color: #f1f1f1;
+  padding-top: 100px;
+  
   
 }
 
@@ -8,16 +13,16 @@
   margin: 20px 0px;
   height: auto;
   display: grid;
-  padding: 40px 20px;
+  padding: 20px;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
+  grid-gap: 10px;
 
 
   &__img{  
-    
+    padding-left: 25px;
     img{
-    width: 95%;
-    max-width: 500px;
+    width: 75%;
+    max-width: 400px;
     box-shadow: 0 15px 40px rgba(#000, .9);
     border-radius: 5%;
     }
@@ -25,6 +30,7 @@
   &__text{
     font-size: 25px;
     text-indent: 40px;
+    padding-right: 25px;
   
     a{
       list-style: none;
