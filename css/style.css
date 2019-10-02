@@ -34,7 +34,7 @@ header {
   background: black;
   position: fixed;
   z-index: 3;
-  width: 100%;
+  width: 100vw;
   left: 0;
   top: 0; }
 
@@ -60,7 +60,6 @@ header {
 
 .splash {
   background-image: linear-gradient(to right bottom, rgba(109, 170, 255, 0.7), rgba(49, 97, 163, 0.9)), url("/images/christopher-gower-m_HRfLhgABo-unsplash.jpg");
-  margin-right: -30px;
   height: 90vh;
   background-size: cover;
   background-attachment: fixed;
@@ -96,7 +95,6 @@ header {
   height: 95vh;
   margin-top: -25vh;
   margin-bottom: 100px;
-  width: 100vw;
   background-color: #f1f1f1;
   padding-top: 100px; }
 
@@ -273,7 +271,8 @@ header {
   padding: 3rem;
   background-color: #d1324f;
   color: #fff;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  margin-right: -50px; }
 
 @media only screen and (max-width: 995px) {
   .about-social-icons-list a {
@@ -293,7 +292,8 @@ header {
   .splash .heading-secondary {
     font-size: 25px; }
   .about {
-    height: 90vh; }
+    height: 90vh;
+    padding-left: 25px; }
   .intro {
     display: block; }
     .intro__img {
@@ -307,40 +307,72 @@ header {
     .portfolio__card--info h3 {
       padding-top: 20px; }
   .contact {
-    margin-top: 3000px; }
+    margin-top: 2700px; }
   .btn-contact {
-    padding: .5rem 1rem; }
+    padding: 5px 10px;
+    margin: 25px;
+    size: 15px; }
   .btn-contact i {
     padding: 1rem; } }
 
 @media only screen and (max-width: 730px) {
   .main-nav {
-    margin-right: 10px; } }
-
-@media only screen and (max-width: 500px) {
-  .main-nav li {
-    font-size: 15px; }
+    margin-right: 10px; }
+    .main-nav li {
+      font-size: 15px;
+      padding: 15px 15px; }
+  .splash__heading {
+    left: 50%; }
   .splash .heading-primary {
     font-size: 30px; }
   .splash .heading-secondary {
     font-size: 18px; }
+  .about {
+    padding-left: 25px; }
+  .portfolio {
+    padding-left: 25px; } }
+
+@media only screen and (max-width: 500px) {
+  .about-social-icons-list a {
+    font-size: 25px; }
+  .about {
+    background-color: #fff; }
+  .main-nav li {
+    font-size: 15px;
+    padding: 10px 15px; }
+  .splash {
+    background-image: linear-gradient(to right bottom, rgba(109, 170, 255, 0.7), rgba(49, 97, 163, 0.9));
+    height: 65vh; }
+    .splash .heading-primary {
+      font-size: 30px; }
+    .splash .heading-secondary {
+      font-size: 18px; }
   .contact {
-    margin-top: 2900px; } }
+    margin-top: 2775px; }
+  .btn-contact {
+    padding: 5px 5px;
+    margin: 25px;
+    font-size: 15px; }
+  .btn-contact i {
+    padding: .5rem; } }
 
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  box-sizing: border-box; }
 
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: auto; }
 
 .container {
-  max-width: 1500px;
-  margin-left: -15px;
-  margin-right: 15px; }
+  margin-right: -45px; }
+
+header {
+  margin-right: -45px; }

@@ -37,6 +37,7 @@
   }
     .about{
      height: 90vh;
+     padding-left: 25px;
     }
     .intro{
       display: block;
@@ -68,11 +69,14 @@
     }
     }
     .contact{
-      margin-top: 3000px;
+      margin-top: 2700px;
+      
       
     }
     .btn-contact{
-      padding: .5rem 1rem;
+      padding: 5px 10px;
+      margin: 25px;
+      size: 15px;
     }
     .btn-contact i{
       padding: 1rem;
@@ -82,22 +86,71 @@
   @media only screen and (max-width:730px){
     .main-nav{
       margin-right: 10px;
-    }
- 
-  }
-  @media only screen and (max-width:500px){
-    .main-nav li{
-      font-size: 15px;
+
+      li{
+        font-size: 15px;
+        padding: 15px 15px;
+      }
     }
     .splash{
+      &__heading{
+        left: 50%;
+      }
       .heading-primary{
         font-size: 30px;
+        
       }
       .heading-secondary{
         font-size: 18px;
       } 
     }
-    .contact{
-      margin-top: 2900px;
+    .about{
+      padding-left: 25px;
     }
+    .portfolio{
+      padding-left: 25px;
+    }
+ 
+  }
+  @media only screen and (max-width:500px){
+    .about-social-icons-list{
+      
+      a{
+        font-size: 25px;
+      }
+    }
+      
+    .about{
+      background-color: #fff;
+    }
+    
+    .main-nav li{
+      font-size: 15px;
+      padding: 10px 15px;
+    }
+    .splash{
+  
+      background-image: linear-gradient(to right bottom, rgba(109, 170, 255,.7), rgba(49, 97, 163, .9));
+      height: 65vh;
+      .heading-primary{
+        font-size: 30px;
+        
+      }
+      .heading-secondary{
+        font-size: 18px;  
+      } 
+    }
+    .contact{
+      margin-top: 2775px;
+    }
+    .btn-contact{
+      padding: 5px 5px;
+      margin: 25px;
+      font-size: 15px;
+    }
+    .btn-contact i{
+      padding: .5rem;
+    }
+    
+      
   }
