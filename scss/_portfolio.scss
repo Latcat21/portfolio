@@ -3,8 +3,6 @@ background-color: #fff;
 position: absolute;
 height: auto;
 
-
-
 &__card{
     position: relative;
     width: 90%;
@@ -82,7 +80,7 @@ height: auto;
 
     }
   }
-  .portfolio__card:nth-child(odd) img{
+  .portfolio__card:nth-child(even) img{
     order: 2;
   }
-}  
+}    

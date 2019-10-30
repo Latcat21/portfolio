@@ -106,7 +106,8 @@ header {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px; }
   .intro__img {
-    padding-left: 25px; }
+    padding-left: 25px;
+    margin-top: -20px; }
     .intro__img img {
       width: 75%;
       max-width: 400px;
@@ -221,7 +222,7 @@ header {
       color: #000;
       font-size: 55px;
       margin: 10px; }
-  .portfolio .portfolio__card:nth-child(odd) img {
+  .portfolio .portfolio__card:nth-child(even) img {
     order: 2; }
 
 .contact {
