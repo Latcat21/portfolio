@@ -1,7 +1,7 @@
 .contact{
   margin-top: 2000px;
   background:  linear-gradient(to right bottom, rgba(109, 170, 255, .3), rgba(49, 97, 163, .99));
-  height: 40vh;
+  height: 70vh;
   padding-top: 100px;
   margin-right: -30px;
   background-size: cover;
@@ -27,19 +27,38 @@
   
 }
 
-.btn-contact,
-.btn-contact:visited{
-  text-transform: uppercase;
-  text-decoration: none;
-  display: inline-block;
-  padding: 1rem 2rem;
-  color: #fff;
-  border: 1px solid #fff;
-  font-size: 1.5rem;
-  margin-top: 3rem;
-  }
-  .btn-contact i{
-    padding: 1rem;
-  }
+.contact-form{
+ width: 70%;
+ margin: 0 auto;
+}
 
- 
+input[type=text],
+input[type=email],
+textarea{
+  width: 100%;
+  padding: 15px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  
+}
+label{
+  float: left;
+  color: #fff;
+  font-weight: 700;
+  padding: 5px;
+}
+   button{
+     margin: 15px;
+     padding: 10px;
+     font-size: 15px;
+     border-radius: 8px;
+     text-transform: uppercase;
+     color: $primary-color ;
+     letter-spacing: 3px;
+     font-weight: 700;
+    
+   }
+textarea{
+  height: 100px;
+}
+*:focus {outline:none; }

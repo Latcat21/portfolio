@@ -110,6 +110,9 @@
     .portfolio{
       padding-left: 25px;
     }
+    .contact{
+      height: 90vh;
+    }
  
   }
   @media only screen and (max-width:500px){
@@ -142,15 +145,9 @@
     }
     .contact{
       margin-top: 2775px;
+      height: 90vh;
     }
-    .btn-contact{
-      padding: 5px 5px;
-      margin: 25px;
-      font-size: 15px;
-    }
-    .btn-contact i{
-      padding: .5rem;
-    }
+    
     
       
   }

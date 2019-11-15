@@ -228,7 +228,7 @@ header {
 .contact {
   margin-top: 2000px;
   background: linear-gradient(to right bottom, rgba(109, 170, 255, 0.3), rgba(49, 97, 163, 0.99));
-  height: 40vh;
+  height: 70vh;
   padding-top: 100px;
   margin-right: -30px;
   background-size: cover;
@@ -251,19 +251,39 @@ header {
   color: #fff;
   text-transform: uppercase; }
 
-.btn-contact,
-.btn-contact:visited {
-  text-transform: uppercase;
-  text-decoration: none;
-  display: inline-block;
-  padding: 1rem 2rem;
-  color: #fff;
-  border: 1px solid #fff;
-  font-size: 1.5rem;
-  margin-top: 3rem; }
+.contact-form {
+  width: 70%;
+  margin: 0 auto; }
 
-.btn-contact i {
-  padding: 1rem; }
+input[type=text],
+input[type=email],
+textarea {
+  width: 100%;
+  padding: 15px;
+  border-radius: 3px;
+  border: 1px solid #ccc; }
+
+label {
+  float: left;
+  color: #fff;
+  font-weight: 700;
+  padding: 5px; }
+
+button {
+  margin: 15px;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  color: #3161a3;
+  letter-spacing: 3px;
+  font-weight: 700; }
+
+textarea {
+  height: 100px; }
+
+*:focus {
+  outline: none; }
 
 .footer {
   text-align: center;
@@ -331,7 +351,9 @@ header {
   .about {
     padding-left: 25px; }
   .portfolio {
-    padding-left: 25px; } }
+    padding-left: 25px; }
+  .contact {
+    height: 90vh; } }
 
 @media only screen and (max-width: 500px) {
   .about-social-icons-list a {
@@ -349,13 +371,8 @@ header {
     .splash .heading-secondary {
       font-size: 18px; }
   .contact {
-    margin-top: 2775px; }
-  .btn-contact {
-    padding: 5px 5px;
-    margin: 25px;
-    font-size: 15px; }
-  .btn-contact i {
-    padding: .5rem; } }
+    margin-top: 2775px;
+    height: 90vh; } }
 
 *,
 *::after,
