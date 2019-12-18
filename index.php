@@ -55,24 +55,6 @@
 <section class="portfolio" id="portfolio">
   <div class="portfolio-container">
 <h2 class="section-headings-portfolio">Portfolio</h2>
-<div class="portfolio__card" data-aos="fade-right">
-  <img src="images/one-stop.png">
-<div class="portfolio__card--info">
-  <h3>One Stop Trak</h3>
-  <p>A Sinatra based health and fitness centered tracking app. Once registered a user keeps track of a days tasks, foods eaten, workouts, and calories consumed. The average calorie consumtion per day is dispalyed to the user. There is also a forum where users can post, comment, and like health and fitness related topics.  </p>
-  <p>Built Using...</p>
-  <ul class="web-tech">
-    <h4>HTML5</h4>
-    <h4>SCSS</i></h4>
-    <h4>RUBY</i></h4>
-    <h4>SINATRA</i></h4>
-    </ul>
-    <div class="btns">
-    <a href="https://one-stop-track.herokuapp.com/" class="card-btn" target="_blank" >Check it out</a>
-            <a href="https://github.com/Latcat21/one-stop-trak" target="_blank"><i class="fab fa-github-square web-tech-github"></i></a>
-            </div>
-</div>
-</div>
 <div class="portfolio__card" data-aos="fade-left">
   <img src="images/the-recruiter.png" >
     <div class="portfolio__card--info">
@@ -108,16 +90,53 @@
           </div>
 </div>
 </div>
-  </section>
+  <div class="portfolio__card" data-aos="fade-left">
+    <img src="images/mem-game.png">
+  <div class="portfolio__card--info">
+    <h3>The Memory Game</h3>
+    <p>Try matching two cards that are the same. If they don't match you move on to flip other cards and have to remember their positions. The game ends when the whole board is uncovered. </p>
+    <p>Built Using...</p>
+    <ul class="web-tech">
+        <h4>HTML5</h4>
+        <h4>CSS</i></h4>
+        <h4>jQuery</i></h4>
+      </ul>
+      <div class="btns">
+      <a href="https://latcat21.github.io/Memory-Card-Game/" class="card-btn" target="_blank" >Check it out</a>
+              <a href="https://github.com/Latcat21/Memory-Card-Game" target="_blank"><i class="fab fa-github-square web-tech-github"></i></a>
+              </div>
+  </div>
+</div>
 
 
-<section class="contact" id="contact">
-    <div class="section-contact">
+</section>
+
+
+<section class="contact" id="form">
+
+    <div class="section-contact" id="contact">
       <h1 class="contact-section-heading">Lets get in touch</h1>
-      <div classe="contact-btn">
-      <a href="mailto:brianlattner@gmail.com" target="_blank" class="btn-contact"><i class="fas fa-envelope-square"></i>Get in touch</a>
-      </div>
+      <?php
+
+      <div class="form-messages success">
+          Thank you! Your message has been sent.
+        </div>
+        <div class="form-messages error">
+            Oops something went wrong. Please try again.
+          </div>
+          ?>
+      <div class="contact-form">
+      <form method="post" action="mailer.php" class="contact-form">
+        <label>Name</label>
+        <input type="text" name="name" id="name" placeholder="Your name" required />
+        <label>Email</label>
+        <input type="email" name="email" id="name" placeholder="Your Email" />
+        <label>Message</label>
+        <textarea name="message" placeholder="Your message" rows=4></textarea>
+        <button>Submit</button>
+      </form>
            </div>
+          </div>
   </section>
   
   

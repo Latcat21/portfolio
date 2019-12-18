@@ -80,7 +80,7 @@ height: auto;
 
     }
   }
-  .portfolio__card:nth-child(even) img{
+  .portfolio__card:nth-child(odd) img{
     order: 2;
   }
-}    
+}        
