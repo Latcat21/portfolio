@@ -2,7 +2,6 @@
   height: 95vh;
   margin-top: -25vh;
   margin-bottom: 100px;
-  
   background-color: #f1f1f1;
   padding-top: 100px;
   
@@ -17,14 +16,12 @@
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
 
-
   &__img{  
     padding-left: 25px;
     margin-top: -20px;
     
     img{
-    
-    width: 75%;
+      width: 75%;
     max-width: 400px;
     box-shadow: 0 15px 40px rgba(#000, .9);
     border-radius: 5%;

@@ -1,27 +1,13 @@
-const menuBtn = document.querySelector('.menu-btn');
-const hamburger = document.querySelector('.menu-btn__burger');
-const nav = document.querySelector('.nav');
-const menuNav = document.querySelector('.menu-nav');
-const navItems = document.querySelectorAll('.menu-nav__item');
+const btn = document.getElementById('menu-btn');
+const dropDown = document.getElementById('dropdown');
 
-let showMenu = false;
+btn.addEventListener('click', toggleNav);
 
-menuBtn.addEventListener('click', toggleMenu);
-
-function toggleMenu() {
-  if(!showMenu) {
-    hamburger.classList.add('open');
-    nav.classList.add('open');
-    menuNav.classList.add('open');
-    navItems.forEach(item => item.classList.add('open'));
-
-    showMenu = true;
-  } else {
-    hamburger.classList.remove('open');
-    nav.classList.remove('open');
-    menuNav.classList.remove('open');
-    navItems.forEach(item => item.classList.remove('open'));
-
-    showMenu = false;
+function toggleNav(){
+  if(dropdown.style.display === 'grid'){
+    dropdown.style.display = 'none';
+  }else{
+    dropdown.style.display = 'grid';
   }
+  console.log('you clicked me')
 }

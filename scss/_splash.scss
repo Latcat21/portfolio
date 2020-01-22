@@ -1,9 +1,7 @@
 .splash{
   
   background-image: linear-gradient(to right bottom, rgba(109, 170, 255,.7), rgba(49, 97, 163, .9)), url('/images/christopher-gower-m_HRfLhgABo-unsplash.jpg');
-  
   height: 90vh;
-  
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -15,23 +13,19 @@
     position: absolute;
     top: 40%;
     left: 60%;
-    transform: translate(-50%, -50%);  
+    transform: translate(-50%, -50%); 
     
-    }
-
-  .heading-primary{
-    font-size: 45px;
-    text-transform: uppercase;
-    color: $color-white;
-    letter-spacing: 2px;
-    animation-name: moveInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-
-     
-
+  &-heading-primary{
+      font-size: 45px;
+      text-transform: uppercase;
+      color: $color-white;
+      letter-spacing: 2px;
+      animation-name: moveInLeft;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+  
   }
-  .heading-secondary{
+  &-heading-secondary{
     padding-top: 15px;
     font-size: 35px;
     color: white;
@@ -43,9 +37,15 @@
     animation: 
     typing 3.5s steps(40, end),
     blink-caret .75s step-end infinite;
-    
+      
 
   }
+
+    
+    }
+
+  
+  
   
   
 }

@@ -14,24 +14,29 @@
 <body>
     <div class="container">
   <header>
-      
-        <nav class="main-nav">
-            <ul>
-              <li class="nav-item"><a href="#home" >Home</a></li>
-              <li class="nav-item"><a href="#about" >About</a></li>
-              <li class="nav-item"><a href="#portfolio" >Portfolio</a></li>
-              <li class="nav-item"><a href="#contact" >Contact</a></li>
-             </ul>
-          </nav>
+      <nav>
+        <div class="main-nav">
+        <h5 class="main-nav__heading"> Brian <span class="main-nav__heading--2">Lattner</span></h5>
+              <a class="main-nav__nav-item" href="#home" >Home</a>
+              <a class="main-nav__nav-item" href="#about" >About</a>
+              <a class="main-nav__nav-item" href="#portfolio" >Portfolio</a>
+              <a  class="main-nav__nav-item" href="#contact" >Contact</a>
+              <i id="menu-btn" class="main-nav__menu fas fa-bars"></i>
+            </div>
+         
+         <div id="dropdown" class="nav-dropdown">
+            <a class="nav-dropdown__nav-item" href="#home" >Home</a>
+            <a class="nav-dropdown__nav-item" href="#about" >About</a>
+            <a class="nav-dropdown__nav-item" href="#portfolio" >Portfolio</a>
+            <a class="nav-dropdown__nav-item" href="#contact" >Contact</a>
+        </div>
+        </nav>
     </header>
-  
- 
-  <section class="splash">
-    
-  <div class="splash__heading">
-  <h3 class="heading-primary">Hi, My name is<span class="heading-primary__name"> Brian</span> </h3>
-  <h2 class="heading-secondary">I love to create beautiful websites</h2>
-</div>
+      <section class="splash">
+        <div class="splash__heading">
+        <h3 class="splash__heading-heading-primary">Hi, My name is Brian </h3>
+        <h2 class="splash__heading-heading-secondary">I love to create beautiful websites</h2>
+    </div>
 </section>
   <section class="about" id="about">
     <h2 class="section-headings-about">About Me</h2>

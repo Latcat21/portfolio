@@ -27,11 +27,22 @@
 
   @media only screen and (max-width:890px){
     
+    .main-nav{
+
+      &__nav-item{
+        display: none;
+      }
+      &__menu{
+        display: initial;
+      }
+    }
+
+
     .splash{
-    .heading-primary{
+    &-heading-primary{
       font-size: 40px;
     }
-    .heading-secondary{
+    &-heading-secondary{
       font-size: 25px;
     } 
   }
@@ -84,26 +95,19 @@
 
   }
   @media only screen and (max-width:730px){
-    .main-nav{
-      margin-right: 10px;
-
-      li{
-        font-size: 15px;
-        padding: 15px 15px;
-      }
-    }
+  
     .splash{
       &__heading{
         left: 50%;
+
+        &-heading-primary{
+          font-size: 30px;
+        }
+        &-heading-secondary{
+          font-size: 18px;
+        } 
       }
-      .heading-primary{
-        font-size: 30px;
-        
-      }
-      .heading-secondary{
-        font-size: 18px;
-      } 
-    }
+  }
     .about{
       padding-left: 25px;
     }
@@ -127,27 +131,25 @@
       background-color: #fff;
     }
     
-    .main-nav li{
-      font-size: 15px;
-      padding: 10px 15px;
-    }
+    
     .splash{
-  
       background-image: linear-gradient(to right bottom, rgba(109, 170, 255,.7), rgba(49, 97, 163, .9));
       height: 65vh;
-      .heading-primary{
-        font-size: 30px;
-        
+      
+      &-heading{
+        &-heading-primary{
+          font-size: 30px;
+          
+        }
+        &-heading-secondary{
+          font-size: 18px;  
+        } 
       }
-      .heading-secondary{
-        font-size: 18px;  
-      } 
+      
     }
     .contact{
       margin-top: 2775px;
       height: 60vh;
     }
     
-    
-      
-  }
+    }

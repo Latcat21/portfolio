@@ -30,33 +30,62 @@
   50% {
     border-color: orange; } }
 
-header {
-  background: black;
-  position: fixed;
-  z-index: 3;
-  width: 100vw;
-  left: 0;
-  top: 0; }
+nav {
+  display: grid;
+  grid-auto-rows: minmax(min-content, 100px) min-content; }
 
 .main-nav {
-  float: right;
-  margin-right: 10rem;
-  color: #fff; }
+  background-color: rgba(0, 0, 0, 0.87);
+  display: grid;
+  place-items: center;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(2, 1fr); }
+  .main-nav__heading {
+    font-size: 1.8rem;
+    color: #f4f4f4; }
+    .main-nav__heading--2 {
+      text-transform: uppercase;
+      color: #3161a3;
+      letter-spacing: .3rem;
+      font-style: italic; }
+  .main-nav__nav-item {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(min-content, 90px);
+    margin-left: auto;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3rem;
+    padding: .5rem;
+    margin-right: 1rem; }
+  .main-nav__nav-item:hover, .main-nav__nav-item:active {
+    color: #d1324f;
+    transform: translateY(-3px); }
+  .main-nav__menu {
+    display: none;
+    color: #fff;
+    font-size: 1.5rem; }
+  .main-nav__menu:hover {
+    cursor: pointer;
+    user-select: none;
+    filter: opacity(50%); }
 
-.main-nav li {
-  display: inline-block;
-  padding: 10px 25px 0 25px;
-  font-size: 20px;
-  text-decoration: none;
-  font-family: "Lato", sans-serif;
-  text-transform: uppercase;
-  color: #fff; }
-
-.main-nav li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 700;
-  letter-spacing: .5px; }
+.nav-dropdown {
+  display: grid;
+  background-color: rgba(0, 0, 0, 0.87);
+  text-align: center;
+  display: none; }
+  .nav-dropdown__nav-item {
+    color: #fff;
+    text-decoration: none;
+    padding: 2rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-bottom: 1px solid #fff; }
+  .nav-dropdown__nav-item:hover {
+    background-color: #fff;
+    color: #3161a3;
+    transform: translateY(-3px); }
 
 .splash {
   background-image: linear-gradient(to right bottom, rgba(109, 170, 255, 0.7), rgba(49, 97, 163, 0.9)), url("/images/christopher-gower-m_HRfLhgABo-unsplash.jpg");
@@ -72,24 +101,24 @@ header {
     top: 40%;
     left: 60%;
     transform: translate(-50%, -50%); }
-  .splash .heading-primary {
-    font-size: 45px;
-    text-transform: uppercase;
-    color: #fff;
-    letter-spacing: 2px;
-    animation-name: moveInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-out; }
-  .splash .heading-secondary {
-    padding-top: 15px;
-    font-size: 35px;
-    color: white;
-    overflow: hidden;
-    border-right: .15em solid orange;
-    white-space: nowrap;
-    margin: 0 auto;
-    letter-spacing: .15em;
-    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite; }
+    .splash__heading-heading-primary {
+      font-size: 45px;
+      text-transform: uppercase;
+      color: #fff;
+      letter-spacing: 2px;
+      animation-name: moveInLeft;
+      animation-duration: 1s;
+      animation-timing-function: ease-out; }
+    .splash__heading-heading-secondary {
+      padding-top: 15px;
+      font-size: 35px;
+      color: white;
+      overflow: hidden;
+      border-right: .15em solid orange;
+      white-space: nowrap;
+      margin: 0 auto;
+      letter-spacing: .15em;
+      animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite; }
 
 .about {
   height: 95vh;
@@ -330,9 +359,13 @@ textarea {
     margin-top: 2200px; } }
 
 @media only screen and (max-width: 890px) {
-  .splash .heading-primary {
+  .main-nav__nav-item {
+    display: none; }
+  .main-nav__menu {
+    display: initial; }
+  .splash-heading-primary {
     font-size: 40px; }
-  .splash .heading-secondary {
+  .splash-heading-secondary {
     font-size: 25px; }
   .about {
     height: 90vh;
@@ -359,17 +392,12 @@ textarea {
     padding: 1rem; } }
 
 @media only screen and (max-width: 730px) {
-  .main-nav {
-    margin-right: 10px; }
-    .main-nav li {
-      font-size: 15px;
-      padding: 15px 15px; }
   .splash__heading {
     left: 50%; }
-  .splash .heading-primary {
-    font-size: 30px; }
-  .splash .heading-secondary {
-    font-size: 18px; }
+    .splash__heading-heading-primary {
+      font-size: 30px; }
+    .splash__heading-heading-secondary {
+      font-size: 18px; }
   .about {
     padding-left: 25px; }
   .portfolio {
@@ -382,15 +410,12 @@ textarea {
     font-size: 25px; }
   .about {
     background-color: #fff; }
-  .main-nav li {
-    font-size: 15px;
-    padding: 10px 15px; }
   .splash {
     background-image: linear-gradient(to right bottom, rgba(109, 170, 255, 0.7), rgba(49, 97, 163, 0.9));
     height: 65vh; }
-    .splash .heading-primary {
+    .splash-heading-heading-primary {
       font-size: 30px; }
-    .splash .heading-secondary {
+    .splash-heading-heading-secondary {
       font-size: 18px; }
   .contact {
     margin-top: 2775px;
@@ -407,12 +432,7 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.7;
+  font-size: 62.5%;
   box-sizing: border-box;
   overflow-x: hidden;
   overflow-y: auto; }
-
-.container {
-  margin-right: -45px; }
-
-header {
-  margin-right: -45px; }
