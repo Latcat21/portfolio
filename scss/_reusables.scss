@@ -5,10 +5,17 @@
   text-align: center;
   color: $primary-color;
   font-weight: 700;
-  margin-top: 100px;
-  padding-top: 10px;
-  padding-bottom: 20px;
-
+  margin-top: 4rem;
+  padding-bottom: 3rem;
+  
+&::after{
+  content: '';
+  border: 1px solid black;
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+ 
+}
 }  
 .section-headings-portfolio{  
   font-size: 50px;
@@ -17,8 +24,17 @@
   text-align: center;
   color: $primary-color;
   font-weight: 700;
-  margin-top: 10px;
+  margin-top: 4rem;
   padding-top: 10px;
   padding-bottom: 43px;
+
+  &::after{
+    content: '';
+    border: 1px solid black;
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+   
+  }
 
 }  

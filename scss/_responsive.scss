@@ -5,7 +5,7 @@
     }
 }
 .portfolio{
-    
+  
   &__card{
       &__info{
       h3{
@@ -29,12 +29,18 @@
     
     .main-nav{
 
+      &__heading{
+        font-size: 1.3rem;
+      }
       &__nav-item{
         display: none;
       }
       &__menu{
         display: initial;
-      }
+        display: grid;
+        justify-self: end;
+        margin-right: 2rem;
+      }  
     }
 
 
@@ -46,28 +52,8 @@
       font-size: 25px;
     } 
   }
-    .about{
-     height: 90vh;
-     padding-left: 25px;
-    }
-    .intro{
-      display: block;
-      
-      &__img{
-       display: none;
-        }
-      &__text{
-        font-size: 20px;  
-      }  
-    }
-    .about-social-icons-list{
-      
-      a{
-        font-size: 50px;
-      }
-    }
-
-    .portfolio{
+  
+   .portfolio{
       &__card{
         display: block;
       
@@ -108,9 +94,23 @@
         } 
       }
   }
-    .about{
-      padding-left: 25px;
+  .intro{
+  display: grid;
+
+  grid-template-columns: 0fr 2fr;
+  
+  
+  &__gallery{
+    &--img{
+      display: none;
     }
+  }
+}
+.section-headings-about{
+  padding-bottom: 2px;
+  margin-top: 2rem;
+}
+    
     .portfolio{
       padding-left: 25px;
     }
@@ -120,36 +120,48 @@
  
   }
   @media only screen and (max-width:500px){
-    .about-social-icons-list{
-      
-      a{
-        font-size: 25px;
-      }
-    }
-      
-    .about{
-      background-color: #fff;
-    }
-    
-    
+   
     .splash{
-      background-image: linear-gradient(to right bottom, rgba(109, 170, 255,.7), rgba(49, 97, 163, .9));
-      height: 65vh;
       
+      height: 65vh;
+      background-image: linear-gradient(to right bottom, rgba(109, 170, 255,.7), rgba(49, 97, 163, .9));
+
       &-heading{
         &-heading-primary{
-          font-size: 30px;
+          font-size: 2.5rem;
           
         }
-        &-heading-secondary{
-          font-size: 18px;  
-        } 
-      }
+        
+       
+      }  
       
+  
+    }
+    .splash__heading-heading-secondary{
+      font-size: 1rem;
+      margin-left: -1rem;
+    }
+    .section-headings-about{
+      padding-bottom: 2px;
+      margin-top: 2rem;
+    }
+    .section-headings-portfolio{ 
+      margin-top: 2rem;
+      padding-bottom: 5px;
     }
     .contact{
-      margin-top: 2775px;
+      margin-top: 2800px;
       height: 60vh;
     }
+    .contact-section-heading{
+      font-size: 2rem;
+    }
     
+    .social-icons-list{
+      margin-top: 3px;
+    }
+    .footer-paragraphy{
+      font-size: 1.5rem;
+    }
+
     }

@@ -46,8 +46,9 @@ nav {
     .main-nav__heading--2 {
       text-transform: uppercase;
       color: #3161a3;
-      letter-spacing: .3rem;
-      font-style: italic; }
+      font-family: 'Dancing Script', cursive;
+      margin-left: 8px;
+      letter-spacing: 3px; }
   .main-nav__nav-item {
     display: grid;
     grid-auto-flow: column;
@@ -89,80 +90,78 @@ nav {
 
 .splash {
   background-image: linear-gradient(to right bottom, rgba(109, 170, 255, 0.7), rgba(49, 97, 163, 0.9)), url("/images/christopher-gower-m_HRfLhgABo-unsplash.jpg");
-  height: 90vh;
+  height: 65vh;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
-  position: relative; }
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-content: center; }
   .splash__heading {
-    position: absolute;
-    top: 40%;
-    left: 60%;
-    transform: translate(-50%, -50%); }
+    transform: translateY(-3rem); }
     .splash__heading-heading-primary {
-      font-size: 45px;
+      font-size: 3rem;
       text-transform: uppercase;
       color: #fff;
       letter-spacing: 2px;
       animation-name: moveInLeft;
-      animation-duration: 1s;
+      animation-duration: 1.5s;
       animation-timing-function: ease-out; }
     .splash__heading-heading-secondary {
-      padding-top: 15px;
-      font-size: 35px;
+      font-size: 1.5rem;
       color: white;
       overflow: hidden;
-      border-right: .15em solid orange;
+      transform: translateX(3rem);
       white-space: nowrap;
       margin: 0 auto;
       letter-spacing: .15em;
       animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite; }
 
 .about {
-  height: 95vh;
-  margin-top: -25vh;
-  margin-bottom: 100px;
   background-color: #f1f1f1;
-  padding-top: 100px; }
+  display: grid;
+  height: 90vh; }
 
 .intro {
-  margin: 20px 0px;
-  height: auto;
   display: grid;
-  padding: 20px;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px; }
-  .intro__img {
-    padding-left: 25px;
-    margin-top: -20px; }
-    .intro__img img {
-      width: 75%;
-      max-width: 400px;
-      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.9);
-      border-radius: 5%; }
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-column-gap: 2rem;
+  padding: 1rem;
+  margin: 1rem; }
+  .intro__gallery--img {
+    width: 90%;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.3);
+    border-radius: 5%; }
   .intro__text {
-    font-size: 25px;
-    text-indent: 40px;
-    padding-right: 25px; }
+    font-size: 1.5rem;
+    text-indent: 2rem; }
     .intro__text a {
       list-style: none;
       color: #d1324f;
       text-decoration: none; }
-
-.about-social-icons-list {
-  margin-top: 30px; }
-  .about-social-icons-list ul {
-    text-decoration: none;
-    text-align: center;
-    list-style: none; }
-  .about-social-icons-list li {
-    display: inline-block; }
-  .about-social-icons-list a {
-    text-decoration: none;
-    color: #000;
-    font-size: 60px; }
+    .intro__text--container {
+      transform: translateY(1rem); }
+    .intro__text--heading {
+      display: grid;
+      grid-template-columns: 1fr max-content 1fr;
+      grid-column-gap: 1.5rem;
+      align-items: center;
+      font-size: 1.6rem; }
+      .intro__text--heading::before, .intro__text--heading::after {
+        content: "";
+        height: 1px;
+        display: block;
+        background-color: currentColor; }
+    .intro__text--skills {
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      grid-template-columns: repeat(5, 1fr); }
+      .intro__text--skills img {
+        width: 50%; }
 
 .section-headings-about {
   font-size: 50px;
@@ -171,9 +170,14 @@ nav {
   text-align: center;
   color: #3161a3;
   font-weight: 700;
-  margin-top: 100px;
-  padding-top: 10px;
-  padding-bottom: 20px; }
+  margin-top: 4rem;
+  padding-bottom: 3rem; }
+  .section-headings-about::after {
+    content: '';
+    border: 1px solid black;
+    display: block;
+    margin: 0 auto;
+    width: 300px; }
 
 .section-headings-portfolio {
   font-size: 50px;
@@ -182,14 +186,19 @@ nav {
   text-align: center;
   color: #3161a3;
   font-weight: 700;
-  margin-top: 10px;
+  margin-top: 4rem;
   padding-top: 10px;
   padding-bottom: 43px; }
+  .section-headings-portfolio::after {
+    content: '';
+    border: 1px solid black;
+    display: block;
+    margin: 0 auto;
+    width: 300px; }
 
 .portfolio {
   background-color: #fff;
-  position: absolute;
-  height: auto; }
+  position: absolute; }
   .portfolio__card {
     position: relative;
     width: 90%;
@@ -289,52 +298,21 @@ nav {
   color: #fff;
   border: 1px solid #fff;
   font-size: 1.5rem;
-  margin-top: 3rem; }
+  margin-top: 2rem; }
 
-.btn-contact i {
-  padding: 1rem; }
+.social-icons-list {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  margin-top: 2rem; }
 
-input[type=text],
-input[type=email],
-textarea {
-  width: 100%;
-  padding: 15px;
-  border-radius: 3px;
-  border: 1px solid #ccc; }
+.social-icons-list li {
+  list-style: none;
+  padding: 0 1rem; }
 
-label {
-  float: left;
+.social-icons-list a {
   color: #fff;
-  font-weight: 700;
-  padding: 5px; }
-
-button {
-  margin: 15px;
-  padding: 10px;
-  font-size: 15px;
-  border-radius: 8px;
-  text-transform: uppercase;
-  color: #3161a3;
-  letter-spacing: 3px;
-  font-weight: 700; }
-
-.form-messages {
-  margin: 0 auto;
-  width: 80%;
-  text-align: center;
-  color: #fff;
-  padding: 10px;
-  font-size: 12px;
-  border: 2px solid #fff; }
-
-.error {
-  background-color: #d1324f; }
-
-textarea {
-  height: 100px; }
-
-*:focus {
-  outline: none; }
+  font-size: 3rem; }
 
 .footer {
   text-align: center;
@@ -359,25 +337,19 @@ textarea {
     margin-top: 2200px; } }
 
 @media only screen and (max-width: 890px) {
+  .main-nav__heading {
+    font-size: 1.3rem; }
   .main-nav__nav-item {
     display: none; }
   .main-nav__menu {
-    display: initial; }
+    display: initial;
+    display: grid;
+    justify-self: end;
+    margin-right: 2rem; }
   .splash-heading-primary {
     font-size: 40px; }
   .splash-heading-secondary {
     font-size: 25px; }
-  .about {
-    height: 90vh;
-    padding-left: 25px; }
-  .intro {
-    display: block; }
-    .intro__img {
-      display: none; }
-    .intro__text {
-      font-size: 20px; }
-  .about-social-icons-list a {
-    font-size: 50px; }
   .portfolio__card {
     display: block; }
     .portfolio__card--info h3 {
@@ -398,28 +370,43 @@ textarea {
       font-size: 30px; }
     .splash__heading-heading-secondary {
       font-size: 18px; }
-  .about {
-    padding-left: 25px; }
+  .intro {
+    display: grid;
+    grid-template-columns: 0fr 2fr; }
+    .intro__gallery--img {
+      display: none; }
+  .section-headings-about {
+    padding-bottom: 2px;
+    margin-top: 2rem; }
   .portfolio {
     padding-left: 25px; }
   .contact {
     height: 70vh; } }
 
 @media only screen and (max-width: 500px) {
-  .about-social-icons-list a {
-    font-size: 25px; }
-  .about {
-    background-color: #fff; }
   .splash {
-    background-image: linear-gradient(to right bottom, rgba(109, 170, 255, 0.7), rgba(49, 97, 163, 0.9));
-    height: 65vh; }
+    height: 65vh;
+    background-image: linear-gradient(to right bottom, rgba(109, 170, 255, 0.7), rgba(49, 97, 163, 0.9)); }
     .splash-heading-heading-primary {
-      font-size: 30px; }
-    .splash-heading-heading-secondary {
-      font-size: 18px; }
+      font-size: 2.5rem; }
+  .splash__heading-heading-secondary {
+    font-size: 1rem;
+    margin-left: -1rem; }
+  .section-headings-about {
+    padding-bottom: 2px;
+    margin-top: 2rem; }
+  .section-headings-portfolio {
+    margin-top: 2rem;
+    padding-bottom: 5px; }
   .contact {
-    margin-top: 2775px;
-    height: 60vh; } }
+    margin-top: 2800px;
+    height: 60vh; }
+  .contact-section-heading {
+    font-size: 2rem; }
+  .social-icons-list {
+    margin-top: 3px; }
+  .footer-paragraphy {
+    font-size: 1.5rem; } }
 
 *,
 *::after,

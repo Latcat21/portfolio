@@ -35,51 +35,24 @@
   color: #fff;
   border: 1px solid #fff;
   font-size: 1.5rem;
-  margin-top: 3rem; }
-
-.btn-contact i {
-  padding: 1rem; }
-
-input[type=text],
-input[type=email],
-textarea{
-  width: 100%;
-  padding: 15px;
-  border-radius: 3px;
-  border: 1px solid #ccc;
-  
+  margin-top: 2rem; 
 }
-label{
-  float: left;
+
+
+.social-icons-list{
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.social-icons-list li{
+  list-style: none;
+  padding: 0 1rem;
+  
+ 
+}
+.social-icons-list a{
   color: #fff;
-  font-weight: 700;
-  padding: 5px;
+  font-size: 3rem;
 }
-   button{
-     margin: 15px;
-     padding: 10px;
-     font-size: 15px;
-     border-radius: 8px;
-     text-transform: uppercase;
-     color: $primary-color ;
-     letter-spacing: 3px;
-     font-weight: 700;
-    
-   }
-   .form-messages{
-    margin: 0 auto;
-    width: 80%;
-     text-align: center;
-     color: #fff;
-     padding: 10px;
-     font-size: 12px;
-     border: 2px solid #fff;
-   }
-   .error{
-     background-color: $secondary-color;
-   }
-  
-textarea{
-  height: 100px;
-}
-*:focus {outline:none; }

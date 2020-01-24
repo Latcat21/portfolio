@@ -6,13 +6,14 @@
   <title>Brian's Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
  <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
   </head>
 <body>
-    <div class="container">
+    
   <header>
       <nav>
         <div class="main-nav">
@@ -41,22 +42,24 @@
   <section class="about" id="about">
     <h2 class="section-headings-about">About Me</h2>
 <div class="intro">
-  <div class="intro__img">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1743827/about_pic.jpg" alt="Self-pic">
+  <div class="intro__gallery">
+      <img  class="intro__gallery--img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1743827/about_pic.jpg" alt="Self-picture" />
   </div>
   <div class="intro__text">
       <p>Personal Trainer turned Web Developer with a passion for building beautifully designed apps. I am a self taught Web Developer and a graduate of <a class="ga-link" href="https://generalassemb.ly/education/software-engineering-immersive/chicago" target="_blank"> General Assembly's </a> Software Engineering Immersive</p>
-      <ul class="about-social-icons-list" id="social-icons-list">
-        <li><a href="https://www.instagram.com/royallatcat/?hl=en"><i class="fab fa-instagram instagram" ></i></a></li>
-        <li><a href="https://github.com/Latcat21"><i class="fab fa-github-square github"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/brian-lattner-722484177/"> <i class="fab fa-linkedin"></i></a></li>
-    </ul>
+      <div class="intro__text--container">
+      <div class="intro__text--heading">My Skills</div>
+      <div class="intro__text--skills">
+        <img class="intro__text--img1"  src="images/js-css-html.png" alt="javascript picture">
+        <img class="intro__text--img2"src="images/sass.png" alt="sass picture">
+        <img class="intro__text--img3"src="images/bootstrap.png" alt="bootstrap picture">
+        <img class="intro__text--img4" src="images/react.png" alt="react picture">
+        <img class="intro__text--img5" src="images/ruby.png" alt="ruby picture">
+        </div>
   </div>
 </div>
 </div>
 </section>
-
-
 <section class="portfolio" id="portfolio">
   <div class="portfolio-container">
 <h2 class="section-headings-portfolio">Portfolio</h2>
@@ -114,14 +117,17 @@
 </div>
 </div>
   </section>
-
-
 <section class="contact" id="contact">
     <div class="section-contact">
       <h1 class="contact-section-heading">Lets get in touch</h1>
-      <div classe="contact-btn">
+      <div class="contact-btn">
       <a href="mailto:brianlattner@gmail.com" target="_blank" class="btn-contact"><i class="fas fa-envelope-square"></i>Get in touch</a>
       </div>
+      <ul class="social-icons-list" id="social-icons-list">
+        <li><a href="https://www.instagram.com/royallatcat/?hl=en"><i class="fab fa-instagram instagram" ></i></a></li>
+        <li><a href="https://github.com/Latcat21"><i class="fab fa-github-square github"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/brian-lattner-722484177/"> <i class="fab fa-linkedin"></i></a></li>
+    </ul>
            </div>
   </section>
   
@@ -134,7 +140,7 @@
       </div>
     </footer>
     
-  </div>
+  
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
