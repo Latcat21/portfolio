@@ -9,14 +9,13 @@
 @import 'footer';
 @import 'responsive';
 
-
-
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box; 
+
 }
 
 body {  
@@ -25,8 +24,8 @@ body {
   line-height: 1.7;
   font-size: 62.5%;
   box-sizing: border-box; 
-  overflow-x: hidden; 
-  overflow-y: auto;
+  // overflow-x: hidden; 
+  // overflow-y: auto;
 }    
 
 
