@@ -96,9 +96,7 @@
   }
   .intro{
   display: grid;
-
   grid-template-columns: 0fr 2fr;
-  
   
   &__gallery{
     &--img{
@@ -117,7 +115,14 @@
     .contact{
       height: 70vh;
     }
- 
+    .btn-contact{
+      // padding: 5px 10px;
+      // margin: 25px;
+      font-size: 18px;
+    }
+    .btn-contact i{
+     padding: 2px;
+    }
   }
   @media only screen and (max-width:500px){
    

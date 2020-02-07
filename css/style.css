@@ -93,7 +93,7 @@ nav {
 
 .splash {
   background-image: linear-gradient(to right bottom, rgba(109, 170, 255, 0.7), rgba(49, 97, 163, 0.9)), url("/images/christopher-gower-m_HRfLhgABo-unsplash.jpg");
-  height: 65vh;
+  height: 80vh;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -213,7 +213,7 @@ nav {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 15 px;
     background-color: #fff;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.9); }
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6); }
     .portfolio__card img {
       width: 90%; }
     .portfolio__card--info h3 {
@@ -378,7 +378,11 @@ nav {
   .portfolio {
     padding-left: 25px; }
   .contact {
-    height: 70vh; } }
+    height: 70vh; }
+  .btn-contact {
+    font-size: 18px; }
+  .btn-contact i {
+    padding: 2px; } }
 
 @media only screen and (max-width: 500px) {
   .splash {
