@@ -1,3 +1,3 @@
 # portfolio
 
-My portfolio brianlattner.com
+My portfolio http://brianlattner.com/
