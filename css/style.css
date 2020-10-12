@@ -91,41 +91,25 @@ nav {
     color: #3161a3;
     transform: translateY(-3px); }
 
-.splash {
+.main-section {
   background-image: linear-gradient(to right bottom, rgba(109, 170, 255, 0.7), rgba(49, 97, 163, 0.9)), url("/images/christopher-gower-m_HRfLhgABo-unsplash.jpg");
-  height: 80vh;
+  height: 70vh;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  position: relative;
-  display: grid;
-  grid-template-rows: 1fr;
-  align-items: center;
-  justify-content: center; }
-  .splash__heading {
-    transform: translateY(-3rem); }
-    .splash__heading-heading-primary {
-      font-size: 3rem;
-      text-transform: uppercase;
-      color: #fff;
-      letter-spacing: 2px;
-      animation-name: moveInLeft;
-      animation-duration: 1.5s;
-      animation-timing-function: ease-out; }
-    .splash__heading-heading-secondary {
-      font-size: 1.5rem;
-      color: white;
-      overflow: hidden;
-      transform: translateX(3rem);
-      white-space: nowrap;
-      margin: 0 auto;
-      letter-spacing: .15em;
-      animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite; }
+  position: relative; }
 
-.about {
-  background-color: #f1f1f1;
-  display: grid;
-  height: 90vh; }
+.about-pic {
+  float: left;
+  width: 300px;
+  position: absolute;
+  margin-top: -100px; }
+  .about-pic img {
+    border-radius: 50%;
+    background-position: center;
+    border: 3px solid black;
+    padding: 15px;
+    background-color: #fff; }
 
 .intro {
   display: grid;
@@ -409,16 +393,32 @@ nav {
   .footer-paragraphy {
     font-size: 1.5rem; } }
 
-*,
-*::after,
-*::before {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
 body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  line-height: 1.7;
-  font-size: 62.5%;
-  box-sizing: border-box; }
+  font-family: 'Dosis', sans-serif;
+  line-height: 1.6;
+  background: #fff; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+h2,
+h3,
+h4 {
+  text-transform: uppercase; }
+
+img {
+  width: 100%; }
+
+.container {
+  max-width: 1280px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden; }

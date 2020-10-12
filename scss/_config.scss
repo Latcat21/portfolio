@@ -1,6 +1,7 @@
 $primary-color: #3161a3;
 $secondary_color: #d1324f;
 $color-white: #fff;
+$website-width: 1280px;
 
 
 
@@ -11,10 +12,11 @@ $color-white: #fff;
 
 
 @function set-text-color($color) {
-  @if (lightness($color) > 40% ){
+  @if (lightness($color) > 40%) {
     @return #000;
-  }@else{
+  }
+
+  @else {
     @return #fff;
   }
 }
-  
