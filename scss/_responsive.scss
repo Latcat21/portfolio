@@ -1,9 +1,30 @@
+  
+  @media only screen and (max-width:1390px){
+    .main-section{
+
+      &-heading{
+        width: 100%;
+      }
+
+      h2{
+        font-size: 1rem
+      }
+      h3{
+        font-size: 2rem;
+      }
+      &-btn{
+        left: 43%;
+      }
+    }
+
+  }
   @media only screen and (max-width:995px){
-    .about-social-icons-list{
+
+   .about-social-icons-list{
       a{
         font-size: 40px;
     }
-}
+   }
 .portfolio{
   
   &__card{
@@ -20,18 +41,15 @@
     }
   }
 }
-.contact{
-  margin-top: 2200px;
-}
+
   }
 
   @media only screen and (max-width:890px){
+   
     
     .main-nav{
 
-      &__heading{
-        font-size: 1.3rem;
-      }
+      
       &__nav-item{
         display: none;
       }
@@ -44,32 +62,45 @@
     }
 
 
-    .splash{
-    &-heading-primary{
-      font-size: 40px;
+    .main-section{
+     
+      
+      &-heading{
+        width: 100%;
+      }
+
+      h2{
+        font-size: .8rem;
+      }
+      h3{
+        font-size: 1.5rem;
+      }
+
+      &-btn{
+        left: 40%;
+      }
     }
-    &-heading-secondary{
-      font-size: 25px;
-    } 
-  }
   
    .portfolio{
       &__card{
         display: block;
+
+        p{
+          font-size: 1rem;
+        }
+
+       
       
       &--info{
         h3{
+          font-size: 1.5rem;
           padding-top: 20px;
          
         }  
       }
     }
     }
-    .contact{
-      margin-top: 2700px;
-      
-      
-    }
+   
     .btn-contact{
       padding: 5px 10px;
       margin: 25px;
@@ -81,70 +112,52 @@
 
   }
   @media only screen and (max-width:730px){
-  
-    .splash{
-      &__heading{
-        left: 50%;
-
-        &-heading-primary{
-          font-size: 30px;
-        }
-        &-heading-secondary{
-          font-size: 18px;
-        } 
-      }
-  }
-  .intro{
-  display: grid;
-  grid-template-columns: 0fr 2fr;
-  
-  &__gallery{
-    &--img{
-      display: none;
+    .about{
+      height: 450px;
     }
-  }
-}
-.section-headings-about{
+    .main-section{
+      background: linear-gradient(to right bottom, rgba(109, 170, 255, .7), rgba(49, 97, 163, .9));
+    
+      &-btn{
+        left: 30%;
+      }
+    }
+  .section-headings-about{
   padding-bottom: 2px;
   margin-top: 2rem;
 }
-    
     .portfolio{
       padding-left: 25px;
     }
-    .contact{
-      height: 70vh;
+    .card-about{
+      display: flex;
+      flex-direction: column-reverse;
+     
+    ul{
+      li{
+        font-size: 13px;
+      }
+    }
+      
+    }
+    .contact-section-heading{
+      font-size: 2rem;
     }
     .btn-contact{
-      // padding: 5px 10px;
-      // margin: 25px;
+     
       font-size: 18px;
     }
     .btn-contact i{
      padding: 2px;
     }
+  
   }
   @media only screen and (max-width:500px){
    
-    .splash{
-      
-      height: 65vh;
-      background-image: linear-gradient(to right bottom, rgba(109, 170, 255,.7), rgba(49, 97, 163, .9));
-
-      &-heading{
-        &-heading-primary{
-          font-size: 2.5rem;
-          
-        }
-        
-       
-      }  
-      
-  
-    }
-    .splash__heading-heading-secondary{
-      font-size: 1rem;
-      margin-left: -1rem;
+    .main-section{
+      &-btn{
+        left: 28%;
+      }
     }
     .section-headings-about{
       padding-bottom: 2px;
@@ -154,13 +167,18 @@
       margin-top: 2rem;
       padding-bottom: 5px;
     }
-    .contact{
-      margin-top: 2800px;
-      height: 60vh;
+
+    .intro{
+      padding-top: 1rem;
+      
     }
+    .about{
+      height: 500px;
+    }
+   
     .contact-section-heading{
       font-size: 2rem;
-    }
+    }  
     
     .social-icons-list{
       margin-top: 3px;

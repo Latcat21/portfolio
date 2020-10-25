@@ -1,165 +1,203 @@
 <!doctype <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Brian's Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
-</head>
-
+ 
+ <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+  </head>
 <body>
-  <!-- navivation-->
-  <header>
+    <section class="main-section">
+        <header>
+          <nav>
+            <div class="main-nav " id="main-nav">
+              <div class="main-nav__logo-container" id="logo">
+            <h5 class="main-nav__heading"  >BL</h5>
+          </div>
+                  <a class="main-nav__nav-item" href="#home" >Home</a>
+                  <a class="main-nav__nav-item" href="#about" >About</a>
+                  <a class="main-nav__nav-item" href="#portfolio" >Portfolio</a>
+                  <a  class="main-nav__nav-item" href="#contact" >Contact</a>
+                  <i id="menu-btn" class="main-nav__menu fas fa-bars"></i>
+                </div>
+             
+             <div id="dropdown" class="nav-dropdown">
+                <a class="nav-dropdown__nav-item" href="#home" >Home</a>
+                <a class="nav-dropdown__nav-item" href="#about" >About</a>
+                <a class="nav-dropdown__nav-item" href="#portfolio" >Portfolio</a>
+                <a class="nav-dropdown__nav-item" href="#contact" >Contact</a>
+            </div>
+            </nav>
+        </header>
+        <div class="main-section-heading ">
+        <h3 >Hi, My name is Brian </h3>
+        <h2>I love to create beautiful websites</h2>
+        <a href="#portfolio">
+          <i class="fas fa-angle-double-down"></i>
+        </a>
+    </div>
+</section>
 
-    <nav>
-      <div class="main-nav">
-        <h5 class="main-nav__heading"> Brian <span class="main-nav__heading--2">Lattner</span></h5>
-        <a class="main-nav__nav-item" href="#home">Home</a>
-        <a class="main-nav__nav-item" href="#about">About</a>
-        <a class="main-nav__nav-item" href="#portfolio">Portfolio</a>
-        <a class="main-nav__nav-item" href="#contact">Contact</a>
-        <i id="menu-btn" class="main-nav__menu fas fa-bars"></i>
-      </div>
+<section class="portfolio " id="portfolio">
+  <!-- <div class="portfolio-container"> -->
+<h2 class="section-headings-portfolio">Portfolio</h2>
+<div class="portfolio__card" data-aos="fade-left">
+  <img src="images/the-recruiter.png" >
+  
+    <div class="portfolio__card--info">
+      <h3>The Recruiter</h3>
+    <p>A Sinatra based application that helps college baseball teams and high school baseball players connect with each other.The Players and Colleges are matched with eachother according to positions played and positions needed. </p>
+    <div class="card-about">
+      <div class="card-about__features">
+    <h5>Key Features</h5>
+    <ul>
+      <li>In app messaging</li>
+      <li>Follow / unfollow users</li>
+      <li>Integrated Google Places API</li>
+      <li>Integrated Google Maps API</li>
+      
+    </ul>
+  </div>
+  <div class="card-about__tech">
+    <h5>Built With</h5>
+    <ul>
+      <li>SCSS</li>
+      <li>Bootstrap</li>
+      <li>Ruby</li>
+      <li>Sinatra</li>
+    
+     </ul>
+    </div>
+  </div>
+<div class="btns">
+    
+      <a href="https://the-recruiter-capstone.herokuapp.com/" class="card-btn" target="_blank" >Check it out</a>
+              <a href="https://github.com/Latcat21/project-5" target="_blank"><i class="fab fa-github-square web-tech-github"></i></a>
+              </div>
+  </div>
+</div>
+<div class="portfolio__card " data-aos="fade-right">
+  <img src="images/one-stop.png">
 
-      <div id="dropdown" class="nav-dropdown">
-        <a class="nav-dropdown__nav-item" href="#home">Home</a>
-        <a class="nav-dropdown__nav-item" href="#about">About</a>
-        <a class="nav-dropdown__nav-item" href="#portfolio">Portfolio</a>
-        <a class="nav-dropdown__nav-item" href="#contact">Contact</a>
-      </div>
-    </nav>
-  </header>
-  <!--main-section-->
-  <section class="main-section">
+<div class="portfolio__card--info">
+  <h3>One Stop Trak</h3>
+  <p>A Sinatra based health and fitness tracking app where you can search and save recipes, keep track of daily tasks, foods eaten, workouts, and calories consumed. The average calorie consumption per day is calculatated and displayed, average hours slept per night, and your BMR. There is also a forum where users can post, comment, and like health and fitness related topics.  </p>
+  
+  <div class="card-about">
+    <div class="card-about__features">
+  <h5>Key Features</h5>
+  <ul>
+    <li>Protected routes</li>
+    <li>Integrated <a class="card-about__link" href="https://www.themealdb.com/api.php" target="_blank">MealDb API</a></li>
+    <li>Mobile first design</li>
+   
+    
+  </ul>
+</div>
+<div class="card-about__tech">
+  <h5>Built With</h5>
+  <ul>
+    <li>SCSS</li>
+    <li>Bootstrap</li>
+    <li>Ruby</li>
+    <li>Sinatra</li>
+  
+   </ul>
+  </div>
+</div>
+     
+  <div class="btns">
+  
+    <a href="https://one-stop-track.herokuapp.com/" class="card-btn" target="_blank" >Check it out</a>
+            <a href="https://github.com/Latcat21/one-stop-trak" target="_blank"><i class="fab fa-github-square web-tech-github"></i></a>
+            </div>
+</div>
+</div>
+
+<div class="portfolio__card"data-aos="fade-right">
+  <a href="https://latcat21.github.io/royal-travels/" target="_blank"><img src="images/royal-travels.png" ></a>
+
+<div class="portfolio__card--info">
+    <h3>Royal Travels</h3>
+  <p>Royal Travels Shows information of countries by searching for a specific country, using the <a href="https://restcountries.eu/" target="_blank">Restcountries API. </a>When a country is searched the information dispalyed is that Country's flag, capital, language, region, population, currency and gini coefficient.</p>
+  
+  <div class="card-about">
+    <div class="card-about__features ">
+  <h5 class="card-features-headings">Key Features</h5>
+  <ul>
+    <li>All Vanilla JS</li>
+    <li>Object Oriented JS</li>
+    <li>Mobile first design</li>
+   
+    
+  </ul>
+</div>
+<div class="card-about__tech">
+  <h5 class="card-features-headings">Built With</h5>
+  <ul>
+    <li>HTML5</li>
+    <li>CSS</li>
+    <li>Javascript</li>
+    
+  
+   </ul>
+  </div>
+</div>
+<div class="btns">
+  <a href="https://latcat21.github.io/royal-travels/" class="card-btn" target="_blank" >Check it out</a>
+          <a href="https://github.com/Latcat21/royal-travels" target="_blank"><i class="fab fa-github-square web-tech-github"></i></a>
+          </div>
+</div>
+</div>
+</div>
 
   </section>
-  <!-- about section-->
   <section class="about container" id="about">
-    <div class="about-pic">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1743827/about_pic.jpg" alt="Self-picture" />
-    </div>
     <h2 class="section-headings-about">About Me</h2>
-    <div class="intro">
-
-      <div class="intro__text">
-        <p>Personal Trainer turned Web Developer with a passion for building beautifully designed apps. I am a self
-          taught Web Developer and a graduate of <a class="ga-link"
-            href="https://generalassemb.ly/education/software-engineering-immersive/chicago" target="_blank"> General
-            Assembly's </a> Software Engineering Immersive</p>
-        <div class="intro__text--container">
-          <div class="intro__text--heading">My Skills</div>
-          <div class="intro__text--skills">
-            <img class="intro__text--img1" src="images/js-css-html.png" alt="javascript picture">
-            <img class="intro__text--img2" src="images/sass.png" alt="sass picture">
-            <img class="intro__text--img3" src="images/bootstrap.png" alt="bootstrap picture">
-            <img class="intro__text--img4" src="images/react.png" alt="react picture">
-            <img class="intro__text--img5" src="images/ruby.png" alt="ruby picture">
-          </div>
+<div class="intro">
+  <div class="intro__text">
+      <p>I am a Full Stack Developer with a primary focus in UI/UX and responsive design. I am a graduate of <a class="ga-link" href="https://generalassemb.ly/education/software-engineering-immersive/chicago" target="_blank"> General Assembly's </a> Software Engineering Immersive. In my free time I enjoy fishing, woodworking, golf, and exercising.</p>
+      <div class="intro__text--container">
+      <div class="intro__text--heading">My Skills</div>
+      <div class="intro__text--skills ">
+        <img class="intro__text--img1"  src="images/pngwing.com.png" alt="javascript picture">
+        <img class="intro__text--img2"src="images/sass.png" alt="sass picture">
+        <img class="intro__text--img3"src="images/bootstrap.png" alt="bootstrap picture">
+        <img class="intro__text--img4" src="images/react.png" alt="react picture">
+        <img class="intro__text--img5" src="images/ruby.png" alt="ruby picture">
         </div>
-      </div>
+  </div>
+</div>
+</div>
+</section>
+<section class="contact" id="contact">
+  <div class="section-contact">
+    <h1 class="contact-section-heading">Lets get in touch</h1>
+    <div class="contact-btn">
+    <a href="mailto:brianlattner@gmail.com" target="_blank" class="btn-contact"><i class="fas fa-envelope-square"> </i> Get in touch</a>
     </div>
-  </section>
-  <section class="portfolio" id="portfolio">
-    <div class="portfolio-container">
-      <h2 class="section-headings-portfolio">Portfolio</h2>
-      <div class="portfolio__card" data-aos="fade-right">
-        <img src="images/one-stop.png">
-        <div class="portfolio__card--info">
-          <h3>One Stop Trak</h3>
-          <p>A Sinatra based health and fitness tracking app. Once registered, a user can keep track of their daily
-            tasks, foods eaten, workouts, and calories consumed. The average calorie consumption per day is displayed to
-            the user, along with their BMR. There is also a forum where users can post, comment, and like health and
-            fitness related topics. </p>
-          <p>Built Using...</p>
-          <ul class="web-tech">
-            <h4>HTML5</h4>
-            <h4>SCSS</i></h4>
-            <h4>RUBY</i></h4>
-            <h4>SINATRA</i></h4>
-          </ul>
-          <div class="btns">
-            <a href="https://one-stop-track.herokuapp.com/" class="card-btn" target="_blank">Check it out</a>
-            <a href="https://github.com/Latcat21/one-stop-trak" target="_blank"><i
-                class="fab fa-github-square web-tech-github"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="portfolio__card" data-aos="fade-left">
-        <img src="images/the-recruiter.png">
-        <div class="portfolio__card--info">
-          <h3>The Recruiter</h3>
-          <p>A Sinatra based application that helps college baseball teams and high school baseball players connect with
-            each other.The Players and Colleges are matched with eachother according to positions played and positions
-            needed </p>
-          <p>Built Using...</p>
-          <ul class="web-tech">
-            <h4>HTML5</h4>
-            <h4>SCSS</i></h4>
-            <h4>RUBY</i></h4>
-            <h4>SINATRA</i></h4>
-          </ul>
-          <div class="btns">
-            <a href="https://the-recruiter-capstone.herokuapp.com/" class="card-btn" target="_blank">Check it out</a>
-            <a href="https://github.com/Latcat21/project-5" target="_blank"><i
-                class="fab fa-github-square web-tech-github"></i></a>
-          </div>
-        </div>
-      </div>
-      <div class="portfolio__card" data-aos="fade-right">
-        <a href="https://latcat21.github.io/royal-travels/" target="_blank"><img src="images/royal-travels.png"></a>
-        <div class="portfolio__card--info">
-          <h3>Royal Travels</h3>
-          <p>Royal Travels Shows information of countries by searching for a specific country, using the <a
-              href="https://restcountries.eu/" target="_blank">Restcountries API. </a>When a country is searched the
-            information dispalyed is that Country's flag, capital, language, region, population, currency and gini
-            coefficient.</p>
-          <p>Built Using...</p>
-          <ul class="web-tech">
-            <h4>HTML5</h4>
-            <h4>CSS</i></h4>
-            <h4>JAVASCRIPT</i></h4>
-          </ul>
-          <div class="btns">
-            <a href="https://latcat21.github.io/royal-travels/" class="card-btn" target="_blank">Check it out</a>
-            <a href="https://github.com/Latcat21/royal-travels" target="_blank"><i
-                class="fab fa-github-square web-tech-github"></i></a>
-          </div>
-        </div>
-      </div>
-  </section>
-  <section class="contact" id="contact">
-    <div class="section-contact">
-      <h1 class="contact-section-heading">Lets get in touch</h1>
-      <div class="contact-btn">
-        <a href="mailto:brianlattner@gmail.com" target="_blank" class="btn-contact"><i class="fas fa-envelope-square">
-          </i> Get in touch</a>
-      </div>
-      <ul class="social-icons-list" id="social-icons-list">
-        <li><a href="https://www.instagram.com/royallatcat/?hl=en"><i class="fab fa-instagram instagram"></i></a></li>
-        <li><a href="https://github.com/Latcat21"><i class="fab fa-github-square github"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/brian-lattner-722484177/"> <i class="fab fa-linkedin"></i></a></li>
-      </ul>
-    </div>
-  </section>
-
-
+    <ul class="social-icons-list" id="social-icons-list">
+      <li><a href="https://www.instagram.com/royallatcat/?hl=en"><i class="fab fa-instagram instagram" ></i></a></li>
+      <li><a href="https://github.com/Latcat21"><i class="fab fa-github-square github"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/brian-lattner-722484177/"> <i class="fab fa-linkedin"></i></a></li>
+  </ul>
+         </div>
+</section>
+  
+  
   <footer class="footer">
-
-    <p class="footer-paragraphy">
-      &copy Brian Lattner made in Chicago Illinois
-    </p>
-    </div>
-  </footer>
-
-
+      
+      <p class="footer-paragraphy">
+        &copy Brian Lattner made in Chicago Illinois
+      </p>
+      </div>
+    </footer>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
@@ -167,11 +205,10 @@
       duration: 1000
     });
   </script>
-  <script src="javascript/main.js"></script>
+  
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-  </script>
+<script src="javascript/main.js"></script>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
 </body>
-
 </html>

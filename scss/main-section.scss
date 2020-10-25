@@ -1,9 +1,62 @@
 .main-section {
 
-  background-image: linear-gradient(to right bottom, rgba(109, 170, 255, .7), rgba(49, 97, 163, .9)), url('/images/christopher-gower-m_HRfLhgABo-unsplash.jpg');
-  height: 70vh;
+  background-image: linear-gradient(to right bottom, rgba(109, 170, 255, .7), rgba(49, 97, 163, .9)), url('/images/christopher-gower-m_HRfLhgABo-unsplash.jpg') ;
+  height: 90vh;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   position: relative;
+  background-color: $primary-color;
+
+ 
+  
+  
+&-heading{
+
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 45%;
+    margin: 0 auto;
+    transform: translate(-50%, -50%);
+    
+    h3{
+      font-size: 3rem;
+      text-transform: uppercase;
+      color: #fff;
+      margin: 0 auto;
+      letter-spacing: 2px;
+      animation-name: moveInLeft;
+      animation-duration: 1.5s;
+      animation-timing-function: ease-out;
+      text-align: center;
+     
+    }
+    h2{
+      font-size: 1.5rem;
+      color: white;
+      overflow: hidden;
+      white-space: nowrap;
+      margin: 0 auto;
+      letter-spacing: .15em;
+     
+      animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+    }
+    i{
+      font-size: 4rem;
+      color: rgba(255,255,255, .9);
+      margin-top: 1rem;
+      animation: fadeIn ease 5s;
+       -webkit-animation: fadeIn ease 5s;
+       -moz-animation: fadeIn ease 5s;
+       -o-animation: fadeIn ease 5s;
+       -ms-animation: fadeIn ease 5s;
+    }
+  
+  }
 }
+
+
