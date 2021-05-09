@@ -7,50 +7,41 @@
   100% {
     opacity: 1;
     transform: translate(0); 
-  } 
-
+   } 
   }
-
   @keyframes moveInRight {
     0%{
-      opacity: 0;
-      transform: translateX(500px);
+       opacity: 0;
+       transform: translateX(500px);
     }
     80%{
-      transform: translateX(-30px)
-  
-    }
+       transform: translateX(-30px)
+      }
     100%{
       opacity: 1;
       transform: translate(0);
+    }
   }
-  }
-
   @keyframes typing {
     from { width: 0 }
     to { width: 100% }
   }
-
   @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: orange; }
   }
-
   @keyframes fadeIn {
     0% {opacity:0;}
     100% {opacity:1;}
     }
-    
     @-moz-keyframes fadeIn {
     0% {opacity:0;}
     100% {opacity:1;}
     }
-    
     @-webkit-keyframes fadeIn {
     0% {opacity:0;}
     100% {opacity:1;}
     }
-    
     @-o-keyframes fadeIn {
     0% {opacity:0;}
     100% {opacity:1;}

@@ -1,11 +1,8 @@
-  
   @media only screen and (max-width:1390px){
     .main-section{
-
       &-heading{
         width: 100%;
       }
-
       h2{
         font-size: 1rem
       }
@@ -16,18 +13,15 @@
         left: 43%;
       }
     }
-
   }
   @media only screen and (max-width:995px){
-
-   .about-social-icons-list{
+    .about-social-icons-list{
       a{
         font-size: 40px;
-    }
+     }
    }
 .portfolio{
-  
-  &__card{
+    &__card{
       &__info{
       h3{
         font-size: 30px;
@@ -40,16 +34,10 @@
       font-size: 12px;
     }
   }
+ }
 }
-
-  }
-
-  @media only screen and (max-width:890px){
-   
-    
-    .main-nav{
-
-      
+@media only screen and (max-width:890px){
+   .main-nav{
       &__nav-item{
         display: none;
       }
@@ -60,47 +48,34 @@
         margin-right: 2rem;
       }  
     }
-
-
     .main-section{
-     
-      
       &-heading{
         width: 100%;
       }
-
       h2{
         font-size: .8rem;
       }
       h3{
         font-size: 1.5rem;
       }
-
       &-btn{
         left: 40%;
       }
     }
-  
-   .portfolio{
+    .portfolio{
       &__card{
         display: block;
-
         p{
           font-size: 1rem;
         }
-
-       
-      
       &--info{
         h3{
           font-size: 1.5rem;
           padding-top: 20px;
-         
         }  
       }
+     }
     }
-    }
-   
     .btn-contact{
       padding: 5px 10px;
       margin: 25px;
@@ -109,7 +84,6 @@
     .btn-contact i{
       padding: 1rem;
     }
-
   }
   @media only screen and (max-width:730px){
     .about{
@@ -117,43 +91,37 @@
     }
     .main-section{
       background: linear-gradient(to right bottom, rgba(109, 170, 255, .7), rgba(49, 97, 163, .9));
-    
       &-btn{
         left: 30%;
       }
     }
   .section-headings-about{
-  padding-bottom: 2px;
-  margin-top: 2rem;
-}
+    padding-bottom: 2px;
+    margin-top: 2rem;
+  }
     .portfolio{
       padding-left: 25px;
     }
     .card-about{
       display: flex;
       flex-direction: column-reverse;
-     
     ul{
       li{
         font-size: 13px;
       }
     }
-      
     }
     .contact-section-heading{
       font-size: 2rem;
     }
     .btn-contact{
-     
-      font-size: 18px;
+     font-size: 18px;
     }
     .btn-contact i{
      padding: 2px;
     }
-  
   }
   @media only screen and (max-width:500px){
-   
     .main-section{
       &-btn{
         left: 28%;
@@ -167,24 +135,19 @@
       margin-top: 2rem;
       padding-bottom: 5px;
     }
-
     .intro{
       padding-top: 1rem;
-      
     }
     .about{
       height: 500px;
     }
-   
     .contact-section-heading{
       font-size: 2rem;
     }  
-    
     .social-icons-list{
       margin-top: 3px;
     }
     .footer-paragraphy{
       font-size: 1.5rem;
     }
-
-    }
+  }

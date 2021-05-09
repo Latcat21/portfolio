@@ -1,26 +1,21 @@
 .main-section {
 
-  background-image: linear-gradient(to right bottom, rgba(109, 170, 255, .7), rgba(49, 97, 163, .9)), url('/images/christopher-gower-m_HRfLhgABo-unsplash.jpg') ;
-  height: 90vh;
+  background-image: linear-gradient(to right bottom, rgba(0,0,0, .3), rgba(0,0,0, .9)), url('/images/background-laptop-pic.jpg  ') ;
+  height: 95vh;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   position: relative;
-  background-color: $primary-color;
+  // background-color: $primary-color;
 
- 
-  
-  
-&-heading{
-
+ &-heading{
     text-align: center;
     position: absolute;
-    top: 60%;
+    top: 40%;
     left: 50%;
-    width: 45%;
-    margin: 0 auto;
+    width: 40%;
+    margin: 0 auto; 
     transform: translate(-50%, -50%);
-    
     h3{
       font-size: 3rem;
       text-transform: uppercase;
@@ -31,8 +26,7 @@
       animation-duration: 1.5s;
       animation-timing-function: ease-out;
       text-align: center;
-     
-    }
+     }
     h2{
       font-size: 1.5rem;
       color: white;
@@ -40,7 +34,6 @@
       white-space: nowrap;
       margin: 0 auto;
       letter-spacing: .15em;
-     
       animation: 
       typing 3.5s steps(40, end),
       blink-caret .75s step-end infinite;
@@ -55,8 +48,53 @@
        -o-animation: fadeIn ease 5s;
        -ms-animation: fadeIn ease 5s;
     }
-  
   }
+
+
 }
 
+.vapour{
+    position: absolute;
+    top: 73%;
+    right: 7.5%;
+    display: flex;
+    z-index: 1;
+    padding: 0 20px;
+}
+
+.vapour span{
+  position: relative;
+  bottom: 50px;
+  display: block;
+  margin: 0 2px 50px;
+  width: 5px;
+  height: 120px;
+  background: #fff;
+  border-radius: 50%;
+  animation: animate 5s infinite;
+  opacity: 0;
+  filter: blur(8px);
+  animation-delay: calc(var(--i) * -0.5s);
+
+}
+
+@keyframes animate {
+  0%{
+    transform: translateY(0) scaleX(1);
+    opacity: 0;
+  }
+  15%{
+    opacity: 1;
+  }
+
+  50%{
+    transform: translateY(-150px) scaleX(5)
+  }
+  95%{
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(-300px) scaleX(10)
+  }
+}
 

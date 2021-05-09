@@ -1,11 +1,9 @@
 .contact{
- 
   background:  linear-gradient(to right bottom, rgba(109, 170, 255, .3), rgba(49, 97, 163, .99));
   height: 50vh;
   padding-top: 100px;
   position: relative;
 }
-
 .section-contact{
   position: absolute;
   top: 50%;
@@ -13,7 +11,6 @@
   transform: translate(-50%, -50%);
   text-align: center;
 }
-
 .contact-section-heading{
   font-size: 50px;
   letter-spacing: 5px;
@@ -32,20 +29,15 @@
   font-size: 1.5rem;
   margin-top: 2rem; 
 }
-
-
 .social-icons-list{
   display: flex;
   justify-content: center;
   padding: 1rem;
   margin-top: 2rem;
 }
-
 .social-icons-list li{
   list-style: none;
   padding: 0 1rem;
-  
- 
 }
 .social-icons-list a{
   color: #fff;
